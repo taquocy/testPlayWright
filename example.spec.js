@@ -9,6 +9,6 @@ test('test', async ({ page }) => {
   await page.getByPlaceholder('Password').fill('donga33xvnt');
   await page.getByRole('link', { name: '+ Đăng nhập' }).click();
   await page.locator('#Label1').click();
-//   await page.getByText('Tạ Quốc Ý 353 0 DONG A UNIVERSITY Hoạch định công việc - Kế hoạch cá nhân - Kế h')
+  //   await page.getByText('Tạ Quốc Ý 353 0 DONG A UNIVERSITY Hoạch định công việc - Kế hoạch cá nhân - Kế h')
   expect(page.locator('#Label1').textContent === 'Tạ Quốc Ý')
 });
